@@ -1,0 +1,33 @@
+[gd_scene load_steps=3 format=3 uid="uid://u11id6v3buaf"]
+
+[ext_resource type="Script" path="res://scene/game.gd" id="1_c661p"]
+[ext_resource type="Texture2D" uid="uid://dmpvkb5v8q60k" path="res://sprite/back_ground.jpg" id="1_yfj16"]
+
+[node name="Node2D" type="Node2D"]
+script = ExtResource("1_c661p")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+position = Vector2(572.75, 320.5)
+scale = Vector2(0.290375, 0.292)
+texture = ExtResource("1_yfj16")
+
+[node name="CanvasLayer" type="CanvasLayer" parent="."]
+
+[node name="Panel" type="Panel" parent="CanvasLayer"]
+offset_right = 190.0
+offset_bottom = 49.0
+
+[node name="point_label" type="Label" parent="CanvasLayer"]
+offset_top = 1.0
+offset_right = 85.0
+offset_bottom = 46.0
+theme_override_font_sizes/font_size = 30
+text = "Point:"
+
+[node name="point_number_label" type="Label" parent="."]
+offset_left = 122.0
+offset_right = 189.0
+offset_bottom = 49.0
+theme_override_font_sizes/font_size = 30
+text = "0"
+horizontal_alignment = 1

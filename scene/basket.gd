@@ -1,4 +1,4 @@
-extends Node
+extends Node2D
 
 var images = [] # لیست عکس‌ها را در اینجا ذخیره کنید
 
