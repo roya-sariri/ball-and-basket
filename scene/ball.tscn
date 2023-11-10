@@ -1,0 +1,12 @@
+[gd_scene load_steps=3 format=3 uid="uid://cwggokbqe4qk0"]
+
+[ext_resource type="Texture2D" uid="uid://ctsfuxtpg4mwg" path="res://sprite/ball/green_ball.png" id="1_7ik5c"]
+[ext_resource type="Script" path="res://scene/Sprite2D.gd" id="1_khmyx"]
+
+[node name="Node2D" type="Node2D"]
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+position = Vector2(0, 768)
+scale = Vector2(0.146286, 0.1536)
+texture = ExtResource("1_7ik5c")
+script = ExtResource("1_khmyx")
