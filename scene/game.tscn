@@ -1,8 +1,11 @@
-[gd_scene load_steps=4 format=3 uid="uid://u11id6v3buaf"]
+[gd_scene load_steps=7 format=3 uid="uid://u11id6v3buaf"]
 
 [ext_resource type="Script" path="res://scene/game.gd" id="1_c661p"]
 [ext_resource type="Texture2D" uid="uid://dmpvkb5v8q60k" path="res://sprite/back_ground.jpg" id="1_yfj16"]
 [ext_resource type="Texture2D" uid="uid://cm3nryrk0r4al" path="res://sprite/exit.png" id="3_d60ae"]
+[ext_resource type="Texture2D" uid="uid://bj0xykc3ix346" path="res://sprite/heart.png" id="3_h1jmp"]
+[ext_resource type="Texture2D" uid="uid://gsv4rgceqhcr" path="res://sprite/point.png" id="4_p5idk"]
+[ext_resource type="Texture2D" uid="uid://dpdavnjf837p4" path="res://sprite/hourglass_3208746.png" id="5_61jr3"]
 
 [node name="Node2D" type="Node2D"]
 script = ExtResource("1_c661p")
@@ -13,25 +16,37 @@ scale = Vector2(0.290375, 0.292)
 texture = ExtResource("1_yfj16")
 
 [node name="Panel" type="Panel" parent="."]
-offset_right = 190.0
-offset_bottom = 49.0
+offset_right = 128.0
+offset_bottom = 128.0
 
-[node name="point_label" type="Label" parent="Panel"]
-layout_mode = 0
-offset_right = 85.0
-offset_bottom = 48.0
-theme_override_font_sizes/font_size = 30
-text = "Point:"
-horizontal_alignment = 1
-vertical_alignment = 1
+[node name="heart" type="Sprite2D" parent="Panel"]
+position = Vector2(32, 104)
+scale = Vector2(0.513738, 0.384)
+texture = ExtResource("3_h1jmp")
+
+[node name="point" type="Sprite2D" parent="Panel"]
+position = Vector2(32, 24)
+scale = Vector2(0.126953, 0.09375)
+texture = ExtResource("4_p5idk")
 
 [node name="point_number_label" type="Label" parent="Panel"]
 layout_mode = 0
-offset_left = 122.0
-offset_right = 189.0
-offset_bottom = 49.0
+offset_left = 64.0
+offset_right = 128.0
+offset_bottom = 64.0
 theme_override_font_sizes/font_size = 30
 text = "0"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="heart_number_label" type="Label" parent="Panel"]
+layout_mode = 0
+offset_left = 64.0
+offset_top = 64.0
+offset_right = 128.0
+offset_bottom = 128.0
+theme_override_font_sizes/font_size = 30
+text = "3"
 horizontal_alignment = 1
 vertical_alignment = 1
 
@@ -40,25 +55,11 @@ offset_left = 512.0
 offset_right = 640.0
 offset_bottom = 48.0
 
-[node name="time_label" type="Label" parent="Panel1"]
-layout_mode = 1
-anchors_preset = -1
-anchor_left = -0.0616317
-anchor_right = 0.000868261
-anchor_bottom = 0.0625
-offset_left = 7.88886
-offset_right = 86.8889
-offset_bottom = 45.0
-theme_override_font_sizes/font_size = 30
-text = "Time:"
-horizontal_alignment = 1
-vertical_alignment = 1
-metadata/_edit_use_anchors_ = true
-
 [node name="time_number_label" type="Label" parent="Panel1"]
 layout_mode = 1
 anchors_preset = -1
-anchor_bottom = 0.00462963
+anchor_left = -0.1875
+anchor_bottom = 0.0625
 offset_left = 88.0
 offset_right = 128.0
 offset_bottom = 45.0
@@ -67,6 +68,11 @@ text = "3"
 horizontal_alignment = 1
 vertical_alignment = 1
 metadata/_edit_use_anchors_ = true
+
+[node name="Sprite2D" type="Sprite2D" parent="Panel1"]
+position = Vector2(32, 24)
+scale = Vector2(0.125, 0.09375)
+texture = ExtResource("5_61jr3")
 
 [node name="Panel2" type="Panel" parent="."]
 offset_left = 960.0
@@ -100,7 +106,7 @@ offset_top = 296.0
 offset_right = 640.0
 offset_bottom = 344.0
 
-[node name="finish_label" type="Label" parent="Panel3"]
+[node name="message_label" type="Label" parent="Panel3"]
 z_index = 100
 layout_mode = 1
 anchors_preset = -1
@@ -111,7 +117,6 @@ offset_left = 3.83331
 offset_right = 88.8333
 offset_bottom = 45.0
 theme_override_font_sizes/font_size = 30
-text = "Finish"
 horizontal_alignment = 1
 vertical_alignment = 1
 metadata/_edit_use_anchors_ = true

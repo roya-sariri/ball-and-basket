@@ -1,9 +1,10 @@
-[gd_scene load_steps=5 format=3 uid="uid://dybti38y5m6x"]
+[gd_scene load_steps=6 format=3 uid="uid://dybti38y5m6x"]
 
 [ext_resource type="Texture2D" uid="uid://dmpvkb5v8q60k" path="res://sprite/back_ground.jpg" id="1_yfj16"]
 [ext_resource type="Script" path="res://scene/main.gd" id="2_a7qnt"]
 [ext_resource type="Texture2D" uid="uid://ce6tuxv6x1bsq" path="res://sprite/basket/blue_basket.png" id="2_lspr2"]
 [ext_resource type="Texture2D" uid="uid://ctsfuxtpg4mwg" path="res://sprite/ball/green_ball.png" id="3_pmv8a"]
+[ext_resource type="Texture2D" uid="uid://ncyv2lelqphq" path="res://sprite/profile.png" id="5_cfugj"]
 
 [node name="Node2D" type="Node2D"]
 script = ExtResource("2_a7qnt")
@@ -43,3 +44,9 @@ offset_top = 384.0
 offset_right = 832.0
 offset_bottom = 448.0
 text = "EXIT"
+
+[node name="profile_texture_button" type="TextureButton" parent="."]
+offset_top = 539.0
+offset_right = 100.0
+offset_bottom = 639.0
+texture_normal = ExtResource("5_cfugj")

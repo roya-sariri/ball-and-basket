@@ -5,6 +5,7 @@ func _ready():
 	$new_button.pressed.connect(go_to_new_game)
 	$load_button.pressed.connect(go_to_load_game)
 	$exit_button.pressed.connect(go_to_exit)
+	$profile_texture_button.pressed.connect(go_to_profile)
 
 func go_to_new_game():
 	get_tree().change_scene_to_file('res://Scene/game.tscn')
@@ -23,3 +24,6 @@ func go_to_load_game():
 
 func go_to_exit():
 	get_tree().quit()
+
+func go_to_profile():
+	get_tree().change_scene_to_file('res://Scene/profile.tscn')
