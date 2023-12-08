@@ -1,10 +1,11 @@
-[gd_scene load_steps=6 format=3 uid="uid://dhneh0rgkxftq"]
+[gd_scene load_steps=7 format=3 uid="uid://dhneh0rgkxftq"]
 
 [ext_resource type="Texture2D" uid="uid://dmpvkb5v8q60k" path="res://sprite/back_ground.jpg" id="1_nqhy7"]
 [ext_resource type="Script" path="res://scene/profile.gd" id="1_skhse"]
 [ext_resource type="Texture2D" uid="uid://ul08surpbcw6" path="res://sprite/name.png" id="2_jkkmb"]
 [ext_resource type="Texture2D" uid="uid://gsv4rgceqhcr" path="res://sprite/point.png" id="3_eubum"]
 [ext_resource type="Texture2D" uid="uid://cm3nryrk0r4al" path="res://sprite/exit.png" id="5_o17fj"]
+[ext_resource type="Texture2D" uid="uid://bcrf1gn6ogx7x" path="res://sprite/coin.png" id="5_ujdqk"]
 
 [node name="Node2D" type="Node2D"]
 script = ExtResource("1_skhse")
@@ -21,34 +22,46 @@ offset_right = 896.0
 offset_bottom = 512.0
 
 [node name="Sprite2D" type="Sprite2D" parent="Panel"]
-position = Vector2(128, 96)
-scale = Vector2(0.203556, 0.128528)
+position = Vector2(112, 64)
+scale = Vector2(0.169719, 0.0965221)
 texture = ExtResource("2_jkkmb")
 
 [node name="Sprite2D2" type="Sprite2D" parent="Panel"]
-position = Vector2(128, 288)
-scale = Vector2(0.375, 0.25)
+position = Vector2(112, 192)
+scale = Vector2(0.3125, 0.1875)
 texture = ExtResource("3_eubum")
+
+[node name="Sprite2D3" type="Sprite2D" parent="Panel"]
+position = Vector2(112, 320)
+scale = Vector2(0.0716525, 0.0427998)
+texture = ExtResource("5_ujdqk")
 
 [node name="name_label" type="Label" parent="Panel"]
 layout_mode = 0
-offset_left = 256.0
-offset_top = 64.0
-offset_right = 480.0
-offset_bottom = 160.0
+offset_left = 320.0
+offset_top = 16.0
+offset_right = 608.0
+offset_bottom = 112.0
 theme_override_font_sizes/font_size = 30
 horizontal_alignment = 1
 vertical_alignment = 1
 
 [node name="point_label" type="Label" parent="Panel"]
 layout_mode = 0
-offset_left = 256.0
-offset_top = 224.0
-offset_right = 480.0
-offset_bottom = 352.0
+offset_left = 320.0
+offset_top = 144.0
+offset_right = 608.0
+offset_bottom = 240.0
 theme_override_font_sizes/font_size = 30
 horizontal_alignment = 1
 vertical_alignment = 1
+
+[node name="coin_label" type="Label" parent="Panel"]
+layout_mode = 0
+offset_left = 320.0
+offset_top = 272.0
+offset_right = 608.0
+offset_bottom = 368.0
 
 [node name="exit_texture_button" type="TextureButton" parent="."]
 offset_top = 540.0

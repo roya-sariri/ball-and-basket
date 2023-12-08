@@ -1,6 +1,5 @@
 extends Node2D
 
-const save_loacation = "res://save/data.json"
 var countdown : int = 3  # عدد ابتدایی
 var countdown_timer : Timer
 
@@ -121,6 +120,6 @@ func cancel_exit():
 	$Popup.hide()
 
 func save_file():
-	var file = FileAccess.open(save_loacation, FileAccess.WRITE)
+	var file = FileAccess.open(global.save_loacation, FileAccess.WRITE)
 	file.store_string(JSON.new().stringify(global.save_dict))
 	file.close()
