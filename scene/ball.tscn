@@ -1,12 +1,12 @@
 [gd_scene load_steps=3 format=3 uid="uid://cwggokbqe4qk0"]
 
-[ext_resource type="Texture2D" uid="uid://ctsfuxtpg4mwg" path="res://sprite/ball/green_ball.png" id="1_7ik5c"]
+[ext_resource type="Texture2D" uid="uid://p5nn4gv6ylo4" path="res://sprite/ball.png" id="1_0s347"]
 [ext_resource type="Script" path="res://scene/ball.gd" id="2_jonf7"]
 
 [node name="Node2D" type="Node2D"]
 
 [node name="Sprite2D" type="Sprite2D" parent="."]
-position = Vector2(576, 528)
-scale = Vector2(0.0365714, 0.0384)
-texture = ExtResource("1_7ik5c")
+position = Vector2(576, 512)
+scale = Vector2(1.13274, 1.08475)
+texture = ExtResource("1_0s347")
 script = ExtResource("2_jonf7")

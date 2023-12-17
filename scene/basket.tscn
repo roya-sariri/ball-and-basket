@@ -1,12 +1,7 @@
-[gd_scene load_steps=8 format=3 uid="uid://k5usvbjk3iss"]
+[gd_scene load_steps=3 format=3 uid="uid://k5usvbjk3iss"]
 
-[ext_resource type="Texture2D" uid="uid://cud0a86epfebf" path="res://sprite/basket/orange_basket.png" id="1_4hyi7"]
 [ext_resource type="Script" path="res://scene/basket.gd" id="1_q8kpi"]
-[ext_resource type="Texture2D" uid="uid://ce6tuxv6x1bsq" path="res://sprite/basket/blue_basket.png" id="3_t8efr"]
-[ext_resource type="Texture2D" uid="uid://cbu5orh622cxx" path="res://sprite/basket/green_basket.png" id="4_dup6d"]
-[ext_resource type="Texture2D" uid="uid://d16wyg6lm7gvd" path="res://sprite/basket/pink_basket.png" id="5_plxgk"]
-[ext_resource type="Texture2D" uid="uid://c0x013ol212y7" path="res://sprite/basket/purple_basket.png" id="6_cutog"]
-[ext_resource type="Texture2D" uid="uid://d0yft4tq4v2m4" path="res://sprite/basket/yellow_basket.png" id="7_oqj3b"]
+[ext_resource type="Texture2D" uid="uid://bnwga1u4jd073" path="res://sprite/basket.png" id="2_d4yn1"]
 
 [node name="Node2D" type="Node2D"]
 script = ExtResource("1_q8kpi")
@@ -16,39 +11,39 @@ offset_left = 256.0
 offset_top = 64.0
 offset_right = 356.0
 offset_bottom = 163.0
-texture_normal = ExtResource("1_4hyi7")
+texture_normal = ExtResource("2_d4yn1")
 
 [node name="TextureButton1" type="TextureButton" parent="."]
 offset_left = 528.0
 offset_top = 256.0
 offset_right = 628.0
 offset_bottom = 355.0
-texture_normal = ExtResource("3_t8efr")
+texture_normal = ExtResource("2_d4yn1")
 
 [node name="TextureButton2" type="TextureButton" parent="."]
 offset_left = 283.0
 offset_top = 256.0
 offset_right = 383.0
 offset_bottom = 355.0
-texture_normal = ExtResource("4_dup6d")
+texture_normal = ExtResource("2_d4yn1")
 
 [node name="TextureButton3" type="TextureButton" parent="."]
 offset_left = 528.0
 offset_top = 64.0
 offset_right = 628.0
 offset_bottom = 163.0
-texture_normal = ExtResource("5_plxgk")
+texture_normal = ExtResource("2_d4yn1")
 
 [node name="TextureButton4" type="TextureButton" parent="."]
 offset_left = 794.0
 offset_top = 64.0
 offset_right = 894.0
 offset_bottom = 163.0
-texture_normal = ExtResource("6_cutog")
+texture_normal = ExtResource("2_d4yn1")
 
 [node name="TextureButton5" type="TextureButton" parent="."]
 offset_left = 768.0
 offset_top = 256.0
 offset_right = 868.0
 offset_bottom = 355.0
-texture_normal = ExtResource("7_oqj3b")
+texture_normal = ExtResource("2_d4yn1")
