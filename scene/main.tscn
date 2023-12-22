@@ -3,17 +3,15 @@
 [ext_resource type="Texture2D" uid="uid://dmpvkb5v8q60k" path="res://sprite/back_ground.jpg" id="1_yfj16"]
 [ext_resource type="Script" path="res://scene/main.gd" id="2_a7qnt"]
 [ext_resource type="Texture2D" uid="uid://bnwga1u4jd073" path="res://sprite/basket.png" id="3_ljgen"]
+[ext_resource type="Texture2D" uid="uid://p5nn4gv6ylo4" path="res://sprite/ball.png" id="4_u7e51"]
 [ext_resource type="Texture2D" uid="uid://ncyv2lelqphq" path="res://sprite/profile.png" id="5_cfugj"]
-
-[sub_resource type="CompressedTexture2D" id="CompressedTexture2D_hifto"]
-load_path = "res://.godot/imported/green_ball.png-e90a10d601746cdb01d5aa65e45bf2d9.ctex"
 
 [node name="Node2D" type="Node2D"]
 script = ExtResource("2_a7qnt")
 
 [node name="Sprite2D" type="Sprite2D" parent="."]
-position = Vector2(576, 322)
-scale = Vector2(0.292, 0.291556)
+position = Vector2(576, 320)
+scale = Vector2(0.973333, 0.971852)
 texture = ExtResource("1_yfj16")
 
 [node name="Sprite2D2" type="Sprite2D" parent="."]
@@ -22,16 +20,15 @@ scale = Vector2(1.46, 1.23737)
 texture = ExtResource("3_ljgen")
 
 [node name="Sprite2D3" type="Sprite2D" parent="."]
-position = Vector2(128, 128)
-scale = Vector2(0.0502857, 0.0513359)
-texture = SubResource("CompressedTexture2D_hifto")
+position = Vector2(192, 128)
+scale = Vector2(1.13274, 1.08475)
+texture = ExtResource("4_u7e51")
 
 [node name="new_button" type="Button" parent="."]
 offset_left = 320.0
 offset_top = 192.0
 offset_right = 832.0
 offset_bottom = 256.0
-theme_override_colors/font_color = Color(0.145098, 0.180392, 0.231373, 1)
 text = "NEW"
 
 [node name="load_button" type="Button" parent="."]

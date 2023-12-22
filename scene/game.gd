@@ -6,10 +6,12 @@ var countdown_timer : Timer
 var main_scene = load("res://scene/main.tscn")
 var basket_scene = load("res://scene/basket.tscn")
 var ball_scene = load("res://scene/ball.tscn")
+var profile_scene = load("res://scene/profile.tscn")
 
 var instance_main_scene = main_scene.instantiate()
 var instance_basket_scene = basket_scene.instantiate()
 var instance_ball_scene = ball_scene.instantiate()
+var instance_profile_scene = profile_scene.instantiate()
 
 @onready var global = get_node("/root/Global")
 
@@ -91,6 +93,7 @@ func set_level(text):
 func set_point(text):
 	$Panel.get_node("point_number_label").set_text(text)
 	global.save_dict["point"] = $Panel.get_node("point_number_label").text.to_int()
+	instance_profile_scene.change_value_point(global.save_dict["point"])
 
 func set_new_level_game():
 	choose_ball_and_basket_random_image()
